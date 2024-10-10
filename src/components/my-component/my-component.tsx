@@ -22,6 +22,8 @@ export class MyComponent {
    */
   @Prop() last: string;
 
+  @Prop() width: `${number}px` | `${number}%`;
+
   private getText(): string {
     return format(this.first, this.middle, this.last);
   }
